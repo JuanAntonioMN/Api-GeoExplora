@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const animales = [
     { id: 1, nombre: 'León', imagen: 'leon.jpg', descripcion: 'El rey de la selva.' },
@@ -38,5 +38,5 @@ app.get('/animales', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Servidor escuchando en http://localhost:${port}`);
+  console.log(`Servidor escuchando en http://localhost:${port}/animales`);
 });
