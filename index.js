@@ -28,7 +28,7 @@ const animales = [
   
 ];
 
-app.get('/animales', (req, res) => {
+app.get('/', (req, res) => {
   res.json(animales.map(animal => ({
     id: animal.id,
     nombre: animal.nombre,
