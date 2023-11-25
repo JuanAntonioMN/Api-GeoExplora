@@ -38,5 +38,5 @@ app.get('/animales', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Servidor escuchando en http://localhost:${port}/animales`);
+  console.log(`Servidor escuchando en http://localhost:${port}`);
 });
