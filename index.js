@@ -16,7 +16,7 @@ const animales = [
     { id: 10, nombre: 'Delfín', imagen: 'delfin.jpg', descripcion: 'Inteligente mamífero marino conocido por su juguetona naturaleza.' },
     { id: 11, nombre: 'Leopardo', imagen: 'leopardo.jpg', descripcion: 'Elegante felino con manchas distintivas.' },
     { id: 12, nombre: 'Hipopótamo', imagen: 'hipopotamo.jpg', descripcion: 'Mamífero semiacuático conocido por su gran tamaño.' },
-    { id: 13, nombre: 'Suricata', imagen: 'suricata.jpg', descripcion: 'Pequeño mamífero que vive en grupos sociales.' },
+    { id: 13, nombre: 'Suricata', imagen: 'suricata.png', descripcion: 'Pequeño mamífero que vive en grupos sociales.' },
     { id: 14, nombre: 'Puma', imagen: 'puma.jpg', descripcion: 'Felino ágil y poderoso que habita en diversas regiones.' },
     { id: 15, nombre: 'Tucán', imagen: 'tucan.jpg', descripcion: 'Ave tropical con un pico colorido y llamativo.' },
     { id: 16, nombre: 'Rinoceronte', imagen: 'rinoceronte.jpg', descripcion: 'Mamífero herbívoro con cuerno distintivo en el hocico.' },
