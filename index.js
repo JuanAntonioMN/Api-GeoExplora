@@ -1,9 +1,10 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
 const animales = [
-    { id: 1, nombre: 'León', imagen: 'leon.jpg', descripcion: 'El rey de la selva.' },
+    { id: 1, nombre: 'León', imagen: 'leon.jpeg', descripcion: 'El rey de la selva.' },
     { id: 2, nombre: 'Elefante', imagen: 'elefante.jpg', descripcion: 'Animal majestuoso y fuerte.' },
     { id: 3, nombre: 'Jirafa', imagen: 'jirafa.jpg', descripcion: 'Con su largo cuello, alcanza las hojas más altas de los árboles.' },
     { id: 4, nombre: 'Tigre', imagen: 'tigre.jpg', descripcion: 'Un depredador feroz con hermosas rayas.' },
@@ -28,11 +29,14 @@ const animales = [
   
 ];
 
+// Servir archivos estáticos desde la carpeta 'imagenes'
+app.use('/imagenes', express.static(path.join(__dirname, 'imagenes')));
+
 app.get('/', (req, res) => {
   res.json(animales.map(animal => ({
     id: animal.id,
     nombre: animal.nombre,
-    imagen: animal.imagen,
+    imagen: `/imagenes/${animal.imagen}`, // Ruta completa de la imagen
     descripcion: animal.descripcion,
   })));
 });
