@@ -109,6 +109,215 @@ const animales = [
   
 ];
 
+const vegetacion = [
+  { id: 1, nombre: 'Rosa', imagen: 'rosas.jpg', descripcion: 'La rosa es una flor conocida por su belleza y fragancia. Se encuentra en una variedad de colores y se utiliza comúnmente como símbolo de amor y romance.' },
+  { id: 2, nombre: 'Orquídea', imagen: 'orquidea.jpg', descripcion: 'La orquídea es una flor exótica con una amplia variedad de especies y colores. Son apreciadas por su elegancia y se encuentran en diversas partes del mundo.' },
+  { id: 3, nombre: 'Pino', imagen: 'pino.jpg', descripcion: 'El pino es un árbol con hojas en forma de aguja y es común en bosques templados. Se utiliza para la producción de madera y tiene un papel importante en la industria forestal.' },
+  { id: 4, nombre: 'Cactus', imagen: 'cactus.jpg', descripcion: 'Los cactus son plantas suculentas adaptadas a entornos áridos. Tienen hojas modificadas en espinas y son conocidos por su capacidad para almacenar agua.' },
+  { id: 5, nombre: 'Bambú', imagen: 'bambu.jpg', descripcion: 'El bambú es una planta de rápido crecimiento y se utiliza en diversas culturas para la construcción y fabricación de diversos productos. Es conocido por su versatilidad.' },
+  { id: 6, nombre: 'Lirio', imagen: 'lirio.jpg', descripcion: 'El lirio es una flor elegante y fragante que se encuentra en una variedad de colores. Se utiliza comúnmente en arreglos florales y tiene un significado simbólico en varias culturas.' },
+  { id: 7, nombre: 'Tomate', imagen: 'tomate.jpg', descripcion: 'El tomate es una planta frutal comúnmente cultivada por sus frutos comestibles. Es una parte fundamental de muchas cocinas y se consume en una variedad de formas.' },
+  { id: 8, nombre: 'Palma', imagen: 'palma.jpg', descripcion: 'Las palmas son árboles con hojas grandes y se encuentran en climas tropicales. Algunas especies de palmas se utilizan para la producción de aceite de palma y otras aplicaciones.' },
+  { id: 9, nombre: 'Hiedra', imagen: 'hiedra.jpg', descripcion: 'La hiedra es una planta trepadora que se adhiere a las superficies. Es apreciada por su aspecto ornamental y se utiliza a menudo en jardines verticales.' },
+  { id: 10, nombre: 'Cedro', imagen: 'cedro.jpg', descripcion: 'El cedro es un árbol de madera aromática y duradera. Se utiliza en la construcción de muebles, revestimientos y en la fabricación de aceites esenciales.' },
+  { id: 11, nombre: 'Girasol', imagen: 'girasol.jpg', descripcion: 'El girasol es una planta que destaca por su gran flor amarilla. Se sigue al sol a lo largo del día en un fenómeno conocido como heliotropismo.' },
+  { id: 12, nombre: 'Manzano', imagen: 'manzano.jpg', descripcion: 'El manzano es un árbol frutal conocido por producir manzanas. Existen numerosas variedades de manzanos con frutos de diferentes colores y sabores.' },
+  { id: 13, nombre: 'Hierba de Limón', imagen: 'hierba_limón.jpg', descripcion: 'La hierba de limón es una planta aromática utilizada en la cocina y en infusiones. Tiene un agradable aroma a limón y propiedades medicinales.' },
+  { id: 14, nombre: 'Cerezos en Flor', imagen: 'cerezos_flor.jpg', descripcion: 'Los cerezos en flor, también conocidos como sakuras, son árboles ornamentales que producen hermosas flores rosadas o blancas en primavera.' },
+  { id: 15, nombre: 'Helecho', imagen: 'helecho.jpg', descripcion: 'Los helechos son plantas no florales que se reproducen a través de esporas. Se encuentran en una variedad de ambientes, desde bosques hasta jardines.' },
+  { id: 16, nombre: 'Almendro', imagen: 'almendro.jpg', descripcion: 'El almendro es un árbol que produce almendras, un fruto seco comestible. Además de su uso culinario, el almendro es apreciado por su floración.' },
+  { id: 17, nombre: 'Aloe Vera', imagen: 'aloe_vera.jpg', descripcion: 'El aloe vera es una planta suculenta conocida por sus propiedades medicinales. Se utiliza comúnmente para tratar quemaduras y afecciones de la piel.' },
+  { id: 18, nombre: 'Begonia', imagen: 'begonia.jpg', descripcion: 'La begonia es una planta ornamental apreciada por sus coloridas flores y hojas decorativas. Se cultiva tanto en interiores como en exteriores.' },
+  { id: 19, nombre: 'Ficus', imagen: 'ficus.jpg', descripcion: 'El ficus es un género de plantas que incluye variedades como el ficus benjamina. Se utilizan como plantas de interior y son conocidas por su adaptabilidad.' },
+  { id: 20, nombre: 'Jazmín', imagen: 'jazmin.jpg', descripcion: 'El jazmín es una planta trepadora famosa por sus fragantes flores blancas o amarillas. Se utiliza en perfumería y aromaterapia.' },
+
+];
+
+const paises = [
+  { 
+    id: 1,
+    nombre: 'Estados Unidos',
+    imagen:'eua.jpg',
+    capital: 'Washington D.C.',
+    poblacion: '331 millones',
+    idioma: 'Inglés',
+    informacionAdicional: 'Estados Unidos es un país diverso con una mezcla de culturas, paisajes y ciudades emblemáticas. Es conocido por su influencia global, innovación tecnológica y su historia en la lucha por la libertad y los derechos civiles.' 
+  },
+  { 
+    id: 2,
+    nombre: 'China',
+    imagen:'china.jpg',
+    capital: 'Pekín',
+    poblacion: '1,411 millones',
+    idioma: 'Chino',
+    informacionAdicional: 'China es una potencia mundial con una rica historia que se extiende por miles de años. Es conocida por su cultura milenaria, su impresionante desarrollo económico y su diversidad geográfica.' 
+  },
+  { 
+    id: 3,
+    nombre: 'India',
+    imagen:'india.jpg',
+    capital: 'Nueva Delhi',
+    poblacion: '1,366 millones',
+    idioma: 'Hindi',
+    informacionAdicional: 'India es un país colorido y diverso con una rica herencia cultural. Es la cuna de varias religiones y ha hecho contribuciones significativas a la filosofía, la medicina y las artes.' 
+  },
+  { 
+    id: 4,
+    nombre: 'Brasil',
+    imagen:'brasil.jpg',
+    capital: 'Brasilia',
+    poblacion: '213 millones',
+    idioma: 'Portugués',
+    informacionAdicional: 'Brasil es conocido por su vibrante cultura, playas tropicales y la Amazonía, el pulmón verde del mundo. Es famoso por su carnaval y su pasión por el fútbol.' 
+  },
+  { 
+    id: 5,
+    nombre: 'Rusia',
+    imagen:'rusia.jpg',
+    capital: 'Moscú',
+    poblacion: '146 millones',
+    idioma: 'Ruso',
+    informacionAdicional: 'Rusia es el país más extenso del mundo, con una rica historia que abarca desde los zares hasta la era soviética. Tiene una diversidad geográfica impresionante, desde tundras hasta montañas.' 
+  },
+  { 
+    id: 6,
+    nombre: 'Japón',
+    imagen:'japon.jpg',
+    capital: 'Tokio',
+    poblacion: '126 millones',
+    idioma: 'Japonés',
+    informacionAdicional: 'Japón es conocido por su mezcla única de tradición y modernidad. Es hogar de la tecnología de vanguardia, la arquitectura tradicional, el sushi y una rica cultura artística.' 
+  },
+  { 
+    id: 7,
+    nombre: 'México',
+    imagen:'mexico.jpg',
+    capital: 'Ciudad de México',
+    poblacion: '126 millones',
+    idioma: 'Español',
+    informacionAdicional: 'México es un país lleno de color, sabor y tradición. Tiene una historia fascinante que se remonta a civilizaciones antiguas como los aztecas y los mayas. La cocina mexicana es reconocida a nivel mundial.' 
+  },
+  { 
+    id: 8,
+    nombre: 'Alemania',
+    imagen:'alemania.jpg',
+    capital: 'Berlín',
+    poblacion: '83 millones',
+    idioma: 'Alemán',
+    informacionAdicional: 'Alemania es conocida por su ingeniería de precisión, su rica historia cultural y sus paisajes encantadores. Ha sido un centro de influencia europea y ha experimentado una notable reunificación después de la Guerra Fría.' 
+  },
+  { 
+    id: 9,
+    nombre: 'Egipto',
+    imagen:'egipto.jpg',
+    capital: 'El Cairo',
+    poblacion: '104 millones',
+    idioma: 'Árabe',
+    informacionAdicional: 'Egipto es hogar de las antiguas pirámides y tiene una rica herencia histórica que se remonta a la civilización del Antiguo Egipto. El río Nilo y el desierto del Sahara son características distintivas de su geografía.' 
+  },
+  { 
+    id: 10,
+    nombre: 'Australia',
+    imagen:'australia.jpg',
+    capital: 'Canberra',
+    poblacion: '25 millones',
+    idioma: 'Inglés',
+    informacionAdicional: 'Australia es conocida por su vida silvestre única, sus vastos paisajes desérticos y su estilo de vida al aire libre. La Gran Barrera de Coral y el Outback son puntos destacados de su geografía.' 
+  },
+  {
+  id: 11,
+    nombre: 'Francia',
+    imagen:'francia.jpg',
+    capital: 'París',
+    poblacion: '67 millones',
+    idioma: 'Francés',
+    informacionAdicional: 'Francia es conocida por su sofisticada cultura, su gastronomía de clase mundial y sus icónicos monumentos como la Torre Eiffel y el Louvre.' 
+  },
+  { 
+    id: 12,
+    nombre: 'Canadá',
+    imagen:'canada.jpg',
+    capital: 'Ottawa',
+    poblacion: '38 millones',
+    idioma: 'Inglés, Francés',
+    informacionAdicional: 'Canadá es un país diverso con impresionantes paisajes naturales que incluyen montañas, lagos y bosques. Es reconocido por su calidad de vida y su enfoque multicultural.' 
+  },
+  { 
+    id: 13,
+    nombre: 'Sudáfrica',
+    imagen:'sudafrica.jpg',
+    capital: 'Pretoria',
+    poblacion: '60 millones',
+    idioma: 'Afrikáans, Inglés',
+    informacionAdicional: 'Sudáfrica es conocida por su diversidad étnica, su historia de lucha contra el apartheid y sus impresionantes reservas de vida silvestre que incluyen el Parque Nacional Kruger.' 
+  },
+  { 
+    id: 14,
+    nombre: 'Argentina',
+    imagen:'argentina.jpg',
+    capital: 'Buenos Aires',
+    poblacion: '45 millones',
+    idioma: 'Español',
+    informacionAdicional: 'Argentina es famosa por su pasión por el fútbol, su tango emocional y sus vastas llanuras conocidas como las Pampas. También es hogar de la Patagonia y los Andes.' 
+  },
+  { 
+    id: 15,
+    nombre: 'Corea del Sur',
+    imagen:'coreasur.jpg',
+    capital: 'Seúl',
+    poblacion: '51 millones',
+    idioma: 'Coreano',
+    informacionAdicional: 'Corea del Sur es conocida por su tecnología avanzada, su cultura pop globalmente influyente y su rica tradición cultural, que incluye la ceremonia del té y la caligrafía.' 
+  },
+  { 
+    id: 16,
+    nombre: 'Nigeria',
+    imagen:'nigeria.jpg',
+    capital: 'Abuja',
+    poblacion: '206 millones',
+    idioma: 'Inglés',
+    informacionAdicional: 'Nigeria es el país más poblado de África y es conocido por su diversidad étnica, su rica herencia cultural y sus recursos naturales como el petróleo.' 
+  },
+  { 
+    id: 17,
+    nombre: 'Italia',
+    imagen:'italia.jpg',
+    capital: 'Roma',
+    poblacion: '60 millones',
+    idioma: 'Italiano',
+    informacionAdicional: 'Italia es famosa por su historia antigua, su arte renacentista, su deliciosa comida y sus icónicos destinos turísticos como el Coliseo y la Torre inclinada de Pisa.' 
+  },
+  { 
+    id: 18,
+    nombre: 'Turquía',
+    imagen:'turquia.jpg',
+    capital: 'Ankara',
+    poblacion: '83 millones',
+    idioma: 'Turco',
+    informacionAdicional: 'Turquía es un país que abarca dos continentes y tiene una rica historia que incluye la antigua ciudad de Troya y la influencia otomana. Su cultura es una fusión única de oriente y occidente.' 
+  },
+  { 
+    id: 19,
+    nombre: 'Marruecos',
+    imagen:'marruecos.jpg',
+    capital: 'Rabat',
+    poblacion: '37 millones',
+    idioma: 'Árabe',
+    informacionAdicional: 'Marruecos es conocido por sus zocos vibrantes, su arquitectura islámica única y sus paisajes que van desde el desierto del Sahara hasta las montañas del Atlas.' 
+  },
+  { 
+    id: 20,
+    nombre: 'Noruega',
+    imagen:'noruega.jpg',
+    capital: 'Oslo',
+    poblacion: '5 millones',
+    idioma: 'Noruego',
+    informacionAdicional: 'Noruega es famosa por sus impresionantes fiordos, su calidad de vida elevada y su conexión con la naturaleza. Es también conocida por la aurora boreal en las noches polares.' 
+  },
+];
+
+
+
 // Servir archivos estáticos desde la carpeta 'imagenes'
 app.use('/imagenes', express.static(path.join(__dirname, 'imagenes')));
 app.use('/sonidos', express.static(path.join(__dirname, 'sonidos')));
@@ -120,7 +329,30 @@ app.get('/', (req, res) => {
     sonido: `/sonidos/${animal.sonido}`, // Ruta completa del sonido
     descripcion: animal.descripcion,
   })));
- 
+
+ // Rutas para la información de vegetación
+app.get('/vegetacion', (req, res) => {
+  res.json(vegetacion.map(planta => ({
+    id: planta.id,
+    nombre: planta.nombre,
+    imagen: `/imagenes/${planta.imagen}`, // Ruta completa de la imagen
+    descripcion: planta.descripcion,
+  })));
+});
+
+// Rutas para la información de países
+app.get('/paises', (req, res) => {
+  res.json(paises.map(pais => ({
+    id: pais.id,
+    nombre: pais.nombre,
+    imagen: `/imagenes/${pais.imagen}`, // Ruta completa de la imagen
+    capital: pais.capital,
+    poblacion: pais.poblacion,
+    idioma: pais.idioma,
+    informacionAdicional: pais.informacionAdicional,
+  })));
+});
+
 
 });
 
