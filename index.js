@@ -321,7 +321,7 @@ const paises = [
 // Servir archivos estáticos desde la carpeta 'imagenes'
 app.use('/imagenes', express.static(path.join(__dirname, 'imagenes')));
 app.use('/sonidos', express.static(path.join(__dirname, 'sonidos')));
-app.get('/', (req, res) => {
+app.get('/animales', (req, res) => {
   res.json(animales.map(animal => ({
     id: animal.id,
     nombre: animal.nombre,
