@@ -2,6 +2,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
+const bodyParser = require('body-parser'); // Asegúrate de tener instalado este paquete
+// Middleware para parsear el cuerpo de las solicitudes
+app.use(bodyParser.json());
+
 
 const animales = [
 { 
@@ -330,6 +334,7 @@ app.get('/', (req, res) => {
     sonido: `/sonidos/${animal.sonido}`, // Ruta completa del sonido
     descripcion: animal.descripcion,
   })));
+});
 
  // Rutas para la información de vegetación
 app.get('/vegetacion', (req, res) => {
@@ -355,6 +360,28 @@ app.get('/paises', (req, res) => {
 });
 
 
+
+
+// Ruta para manejar notificaciones de Mercado Libre
+app.post('/mercadolibre-notificaciones', (req, res) => {
+  // Procesar la notificación de Mercado Libre
+  const data = req.body; // La información de la notificación estará en el cuerpo de la solicitud
+
+  // Aquí puedes agregar la lógica necesaria para manejar la notificación
+  // ...
+
+  res.status(200).send('Notificación recibida correctamente');
+});
+
+// Ruta de callback para autorización de Mercado Libre
+app.get('/auth-callback', (req, res) => {
+  // Procesar el callback de autorización de Mercado Libre
+  const code = req.query.code; // El código de autorización estará en los parámetros de la URL
+
+  // Aquí puedes agregar la lógica necesaria para manejar el código de autorización
+  // ...
+
+  res.status(200).send('Autorización completada correctamente');
 });
 
 app.listen(port, () => {
